@@ -1,0 +1,37 @@
+
+		<section id="gravedad" class="ui main container">
+
+			<h4 class="ui header">TIPOS DE GRAVEDAD</h4>
+			<div class="ui floated">
+				<a class="ui red tag label">Alta</a>
+				<a class="ui orange tag label">Media</a>
+				<a class="ui green tag label">Baja</a>
+				<a class="ui black tag label">Desconocida</a>
+			</div>
+		</section>
+
+		<section id="cortes" class="ui three stackable cards container">
+	  		<div ng-class="{'green card': corte.properties.gravedad === 'Gravedad baja', 'orange card': corte.properties.gravedad === 'Gravedad media', 'red card': corte.properties.gravedad === 'Gravedad alta', 'black card': corte.properties.gravedad === 'Graedad desconocida'}" ng-repeat="corte in cortes">
+			  <div class="content">
+			    <div class="header">{{ corte.properties.motivo }} </div>
+			    <div class="meta">
+			    	<span class="left floated">Inicio Estimado: {{corte.properties.fecha_inicio_estimada | date}} </span>
+			    	<br>
+			    	<span class="left floated">Finalizacion Estimada: {{corte.properties.fecha_finalizacion_estimada | date}} </span>
+		    	</div>
+				<div class="ui clearing divider"></div>
+			    <div class="description">
+			    	<h5>{{corte.properties.momento}}</h5>
+			    	<p> {{ corte.properties.observaciones }}</p>
+					<p><u>Alcance:</u> {{ corte.properties.alcance }}</p>
+			    	<p><u>Calle:</u> {{ corte.properties.calle_principal }}</p>  
+			    	<p><u>Entre calles:</u> {{corte.properties.entre_calle_1}} y {{corte.properties.entre_calle_2}}</p>  
+			    </div>
+			  </div>
+			     <div class="extra content">
+				      <span class="right floated">
+				        {{ corte.properties.responsable }}
+				      </span>
+				  </div>
+			</div>
+		</section>

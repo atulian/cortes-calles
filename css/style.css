@@ -7,3 +7,15 @@
 	margin-top: 80px;
 	margin-bottom: 10px;
 }
+
+@media only screen and (max-width: 700px) {
+      #navegacion #nav{
+        display: none;
+      }
+}
+
+@media only screen and (min-width: 700px) {
+      #navegacion .toc.item{
+        display: none;
+      }
+}
