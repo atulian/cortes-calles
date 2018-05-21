@@ -1,8 +1,8 @@
 var app = angular.module('appCortes', ['ngRoute']);
 
-// app.service('Map', [function () {
+app.service('Map', [function () {
 	
-// }]);
+}]);
 
 app.controller('mainCtrl', ['$scope', function($scope){
 	$scope.menuSuperior = 'parciales/menu.html';
