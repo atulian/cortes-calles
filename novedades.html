@@ -1,8 +1,8 @@
 
 		<section id="gravedad" class="ui main container">
 
-			<h4 class="ui header">TIPOS DE GRAVEDAD</h4>
-			<div class="ui floated">
+			<h4 class="ui header animated fadeIn">TIPOS DE GRAVEDAD</h4>
+			<div class="ui floated animated fadeIn">
 				<a class="ui red tag label">Alta</a>
 				<a class="ui orange tag label">Media</a>
 				<a class="ui green tag label">Baja</a>
@@ -10,7 +10,7 @@
 			</div>
 		</section>
 
-		<section id="cortes" class="ui three stackable cards container">
+		<section id="cortes" class="ui three stackable cards container animated fadeIn">
 	  		<div ng-class="{'green card': corte.properties.gravedad === 'Gravedad baja', 'orange card': corte.properties.gravedad === 'Gravedad media', 'red card': corte.properties.gravedad === 'Gravedad alta', 'black card': corte.properties.gravedad === 'Graedad desconocida'}" ng-repeat="corte in cortes">
 			  <div class="content">
 			    <div class="header">{{ corte.properties.motivo }} </div>

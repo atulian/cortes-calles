@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="css/sidebar.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/icon.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
 	<!-- include jquery -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -17,6 +18,10 @@
 	<!-- include angular -->
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
 	<script src="js/angular-route.min.js"></script>
+	<script src="js/angular-google-maps.min.js"></script>
+	<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-TkfEC1jZ_-7GKx1LvvJg-O9PMAsLppQ">
+    </script>
 
 	<script src="js/app.js"></script>
 	<script src="js/routes.js"></script>
@@ -25,6 +30,7 @@
 		#map {
         	height: 560px;
         	width: 100%;
+        	margin-top: 20px;
       	}
 	</style>
 
@@ -44,6 +50,7 @@
 			$(document).ready(function() {
 				$('.ui.sidebar')
 			        .sidebar('attach events', '.toc.item');
+
 			});
 		</script>
 
