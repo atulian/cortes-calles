@@ -55,8 +55,6 @@ app.controller('cortesCtrl', ['$scope','$http', function($scope,$http){
 
 		$scope.cortes = cortes;
 
-		console.log(cortes);
-
 	});	
 }]);
 
